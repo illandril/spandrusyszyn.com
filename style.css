@@ -1,0 +1,148 @@
+html,
+body {
+    background-color: #FFF;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.25em 0.5em;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.1em;
+    margin: 1.5em 0.5em 0 0.5em;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #00C;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.familyTree {
+    display: inline-block;
+    width: 650px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.familyTree .member {
+    margin: 2em 0;
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.familyTree .member a {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+.familyTree .member a:hover {
+    color: #00C;
+}
+
+.familyTree .member .photo {
+    max-width: 90%;
+}
+
+.familyTree .member .details {
+    border-width: 1px 0 2px 0;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    margin: 0.5em 1em;
+}
+
+.familyTree .member:hover .details {
+    border-color: #00C;
+}
+
+.familyTree .member .name {
+    font-size: 1.25em;
+    font-weight: bold;
+    display: block;
+}
+
+.familyTree .member .subtitle {
+    display: block;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.nee {
+    display: block;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+nav {
+    border-bottom: 1px dashed black;
+    margin-bottom: 0.5em;
+    padding: 0.25em;
+}
+
+.personPage {
+    display: inline-block;
+    width: 650px;
+    max-width: 100%;
+}
+
+.personPage .details {
+    border-style: dotted;
+    border-width: 2px 0;
+    border-color: black;
+    padding: 0.5em;
+}
+
+.personPage .details div + div {
+    margin-top: 0.5em;
+}
+
+.personPage .details.linkCloud {
+    padding: 0;
+}
+
+.personPage .linkCloud a {
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.block {
+    display: inline-block;
+}
+
+.origin {
+    display: none;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    text-decoration: line-through;
+}
+
+:hover > .origin {
+    display: inline;
+}
+
+.external:hover:after {
+  content: "\00a0\f14c";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10px;
+  vertical-align: top;
+  display: inline-block;
+  text-decoration: none;
+}

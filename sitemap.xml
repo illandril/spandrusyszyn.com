@@ -1,0 +1,22 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>http://www.spandrusyszyn.com/</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2014-04-10T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.spandrusyszyn.com/joe.html</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2014-04-10T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.spandrusyszyn.com/crystal.html</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2014-04-10T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.spandrusyszyn.com/cats.html</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2014-04-10T00:00:00+00:00</lastmod>
+    </url>
+</urlset>
