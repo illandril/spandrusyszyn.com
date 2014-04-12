@@ -1,0 +1,8 @@
+.external:after,
+.fa {
+    display: none !important;
+}
+
+.origin {
+    color: #666;
+}
