@@ -118,7 +118,7 @@ nav {
 
 .personPage .linkCloud a {
     display: inline-block;
-    margin: 0.5em;
+    margin: 0.5em 1em;
 }
 
 .block {
@@ -136,13 +136,22 @@ nav {
     display: inline;
 }
 
+.external:after {
+    content: "\00a0\f14c";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10px;
+    vertical-align: top;
+    text-decoration: none;
+    visibility: hidden;
+}
+
 .external:hover:after {
-  content: "\00a0\f14c";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 10px;
-  vertical-align: top;
-  display: inline-block;
-  text-decoration: none;
+    visibility: visible;
+}
+
+.fa .alt {
+    display: none;
 }
