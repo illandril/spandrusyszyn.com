@@ -33,6 +33,14 @@
         }
     };
 
+    var addSVGClass = function(elem, cname) {
+        if (elem.classList && elem.classList.add) {
+            elem.classList.add(cname);
+        } else {
+            elem.setAttribute('class', elem.getAttribute('class') + ' ' + cname);
+        }
+    }
+
     var _showStates = function(target, people, svgElem) {
         
         var statesClasses;
@@ -65,8 +73,8 @@
 
         for (var pi = 0; pi < people.length; pi++) {
             var states = svgElem.cloneNode(true);
-            states.classList.add(statesClasses[pi]);
-            states.classList.add(people[pi].color);
+            addSVGClass(states, statesClasses[pi]);
+            addSVGClass(states, people[pi].color);
             states.style.opacity = (1 / (pi + 1));
 
             var passedThru = people[pi].passedThru;
@@ -75,13 +83,13 @@
 
             var i;
             for (i = 0; i < passedThru.length; i++) {
-                states.querySelector('.state.' + passedThru[i]).classList.add('passedThru');
+                addSVGClass(states.querySelector('.state.' + passedThru[i]), 'passedThru');
             }
             for (i = 0; i < visited.length; i++) {
-                states.querySelector('.state.' + visited[i]).classList.add('visited');
+                addSVGClass(states.querySelector('.state.' + visited[i]), 'visited');
             }
             for (i = 0; i < lived.length; i++) {
-                states.querySelector('.state.' + lived[i]).classList.add('lived');
+                addSVGClass(states.querySelector('.state.' + lived[i]), 'lived');
             }
 
             display.appendChild(states);
