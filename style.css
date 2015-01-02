@@ -100,28 +100,28 @@ nav {
     padding: 0.25em;
 }
 
-.personPage {
+.detailPage {
     display: inline-block;
     width: 650px;
     max-width: 100%;
 }
 
-.personPage .details {
+.detailPage .details {
     border-style: dotted;
     border-width: 2px 0;
     border-color: black;
     padding: 0.5em;
 }
 
-.personPage .details div + div {
+.detailPage .details div + div {
     margin-top: 0.5em;
 }
 
-.personPage .details.linkCloud {
+.detailPage .details.linkCloud {
     padding: 0;
 }
 
-.personPage .linkCloud a {
+.detailPage .linkCloud a {
     display: inline-block;
     margin: 0.5em 0.7em;
 }
@@ -158,4 +158,39 @@ nav {
 
 .fa .alt {
     display: none;
+}
+
+
+/* states */
+.visitedStates {
+    display: inline-block;
+    width: 100%;
+    max-width: 602px;
+}
+.visitedStatesDisplay {
+    position: relative;
+    border: 1px solid #999;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.visitedStatesDisplay svg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    font-size: 12px;
+}
+.visitedStatesDisplay svg:first-child {
+    position: relative;
+}
+.visitedStatesTitle .name {
+    font-weight: bold;
+}
+.visitedStatesTitle .name,
+.visitedStatesTitle .count {
+    display: inline-block;
+    width: 18%;
+    padding: 0 8px;
 }
