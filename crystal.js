@@ -4,6 +4,6 @@ people.push({
  color: 'purple',
  link: 'crystal.html',
  lived: ['ny'],
- visited: ['ct', 'fl', 'ga', 'in', 'ky', 'ma', 'md', 'mi', 'nj', 'oh', 'pa', 'sc', 'va', 'vt', 'il'],
- passedThru: ['de', 'nc', 'nh', 'wv']
+ visited: ['ct', 'fl', 'ga', 'in', 'ky', 'ma', 'md', 'mi', 'nj', 'oh', 'pa', 'sc', 'va', 'vt', 'il', 'nc'],
+ passedThru: ['de', 'nh', 'wv']
 });
