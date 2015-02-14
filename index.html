@@ -7,55 +7,43 @@
   <link rel="canonical" href="http://www.spandrusyszyn.com" />
   <title>Spandrusyszyn Family</title>
   <!--[if IE 8]>
-   <script src="//cdn.jsdelivr.net/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+   <script>document.createElement('picture');</script>
    <link href="style_ie8.css" rel="stylesheet">
   <![endif]-->
-  <link href="//cdn.jsdelivr.net/fontawesome/4.1/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.jsdelivr.net/fontawesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
  </head>
  <body>
-  <h1>The Spa<s class="origin">gnola and A</s>ndrusyszyn Family <i class="fa fa-male"></i><i class="fa fa-female"></i></h1>
-  <div class="details">
-   The only one that has ever existed (as far as we know).
-  </div>
-  <div class="familyTree">
-   <span class="member" itemscope itemtype="http://schema.org/Person">
-    <a href="joe.html" itemprop="url">
-     <img class="photo" src="joe.jpg">
-     <span class="details">
-      <span class="name" itemprop="name">Joe Spandrusyszyn</span>
-      <span class="subtitle">Software Engineer</span>
-     </span>
+  <header class="z2">
+   <a href="." class="content">Spa<s class="origin">gnola and A</s>ndrusyszyn Family</a>
+  </header>
+  <div class="content grid">
+   <a class="tile" href="joe.html" style="background-image:url(joe.jpg);" itemscope itemtype="http://schema.org/Person">
+    <div class="footer">
+     <div class="primary" itemprop="name">Joe Spandrusyszyn</div>
+     <div class="secondary">Software Engineer</div>
+    </div>
+   </a><!--
+--><a class="tile" href="crystal.html" style="background-image:url(crystal.jpg);" itemscope itemtype="http://schema.org/Person">
+    <div class="footer">
+     <div class="primary" itemprop="name">Crystal Spandrusyszyn</div>
+     <div class="secondary">"1950's" Housewife</div>
+    </div>
+   </a><!--
+--><a class="tile" href="sam.html" style="background-image:url(sam.jpg);" itemscope itemtype="http://schema.org/Person">
+    <div class="footer">
+     <div class="primary" itemprop="name">Sam Spandrusyszyn</div>
+     <div class="secondary">Shoe Sleeper</div>
+    </div>
+   </a><!--
+--><a class="tile" href="dean.html" style="background-image:url(dean.jpg);" itemscope itemtype="http://schema.org/Person">
+    <div class="footer">
+     <div class="primary" itemprop="name">Dean Spandrusyszyn</div>
+     <div class="secondary">Loudmouth Extrordinaire</div>
+    </div>
    </a>
-   </span>
-   <span class="member" itemscope itemtype="http://schema.org/Person">
-    <a href="crystal.html" itemprop="url">
-     <img class="photo" src="crystal.jpg">
-     <span class="details">
-      <span class="name" itemprop="name">Crystal Spandrusyszyn</span>
-      <span class="subtitle">"1950's" Housewife</span>
-     </span>
-    </a>
-   </span>
-   <span class="member" itemscope itemtype="http://schema.org/Thing">
-    <a href="sam.html" itemprop="url">
-     <img class="photo" src="sam.jpg">
-     <span class="details">
-      <span class="name" itemprop="name">Sam Spandrusyszyn</span>
-      <span class="subtitle">Shoe Sleeper</span>
-     </span>
-    </a>
-   </span>
-   <span class="member" itemscope itemtype="http://schema.org/Thing">
-    <a href="dean.html" itemprop="url">
-     <img class="photo" src="dean.jpg">
-     <span class="details">
-      <span class="name" itemprop="name">Dean Spandrusyszyn</span>
-      <span class="subtitle">Loudmouth Extrordinaire</span>
-     </span>
-    </a>
-   </span>
   </div>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -66,5 +54,7 @@
   ga('create', 'UA-52492365-1', 'auto');
   ga('send', 'pageview');
   </script>
+  <script src="script.js"></script>
+  <script src="//cdn.jsdelivr.net/picturefill/2.3.0-beta/picturefill.min.js"></script>
  </body>
 </html>

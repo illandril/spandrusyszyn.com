@@ -71,11 +71,19 @@
         container.appendChild(display);
         target.appendChild(container);
 
+        var baseWidth = parseInt(svgElem.getAttribute('width'),10);
+        var baseHeight = parseInt(svgElem.getAttribute('height'),10);
+        var newWidth = target.clientWidth;
+        var newHeight = (newWidth / baseWidth) * baseHeight;
+        
         for (var pi = 0; pi < people.length; pi++) {
             var states = svgElem.cloneNode(true);
             addSVGClass(states, statesClasses[pi]);
             addSVGClass(states, people[pi].color);
             states.style.opacity = (1 / (pi + 1));
+
+            states.setAttribute('width', newWidth);
+            states.setAttribute('height', newHeight);
 
             var passedThru = people[pi].passedThru;
             var visited = people[pi].visited;
@@ -93,7 +101,7 @@
             }
 
             display.appendChild(states);
-
+            /*
             if (people.length > 1) {
                 var nameElem;
                 if (people[pi].link != null) {
@@ -110,6 +118,7 @@
             count.className = 'count';
             count.innerHTML = ((visited.length + lived.length) * 2) + '% Visited';
             countsContainer.appendChild(count);
+            */
         }
     };
 

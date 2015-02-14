@@ -7,50 +7,77 @@
   <link rel="canonical" href="http://www.spandrusyszyn.com/dean.html" />
   <title>Dean Spandrusyszyn</title>
   <!--[if IE 8]>
-   <script src="//cdn.jsdelivr.net/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+   <script>document.createElement('picture');</script>
    <link href="style_ie8.css" rel="stylesheet">
   <![endif]-->
-  <link href="//cdn.jsdelivr.net/fontawesome/4.1/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.jsdelivr.net/fontawesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
  </head>
- <body>
-  <nav>
-   <a href=".">See the entire Spa<s class="origin">gnola and A</s>ndrusyszyn Family</a>
-  </nav>
-  <section class="detailPage" itemscope itemtype="http://schema.org/Thing">
-   <img src="dean.jpg" itemprop="image">
-   
-   <h1><span itemprop="name">Dean Spandrusyszyn</span></h1>
-   
-   <h2>Job</h2>
-   <div class="details job">
-    <span class="block">Cat</span>
-   </div>
-   
-   <h2>Namesake</h2>
-   <div class="details namesake">
-    <a href="http://en.wikipedia.org/wiki/Dean_Winchester" class="external" target="_blank">Dean Winchester</a>
-   </div>
-   
-   <h2>Family</h2>
-   <div class="details family">
-    <div class="member">
-     <a href="joe.html" class="block">Joe Spandrusyszyn</a> ("Father")
+ <body class="dualheader" itemscope itemtype="http://schema.org/Thing">
+  <header class="z2">
+   <a href="." class="content">Spa<s class="origin">gnola and A</s>ndrusyszyn Family</a>
+   <div class="subheader content"><a href="." class="navback"></a><span itemprop="name">Dean Spandrusyszyn</span></div>
+  </header>
+  <div class="content cover"><picture class="z1">
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source srcset="cover-dean-1008.jpg" media="(min-width: 1024px)">
+    <source srcset="cover-dean-496.jpg" media="(min-width: 321px)">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="cover-dean-304.jpg" alt="Dean Spandrusyszyn">
+  </picture></div>
+  <div class="content cards">
+   <div class="card z1">
+    <div class="title">Basic Information</div>
+    <div class="content">
+     <div class="subheader">Namesake</div>
+     <div class="text"><a href="http://en.wikipedia.org/wiki/Dean_Winchester" class="external" target="_blank">Dean Winchester</a></div>
     </div>
-    <div class="member">
-     <a href="crystal.html" class="block">Crystal Spandrusyszyn</a> ("Mother")
+    <div class="content">
+     <div class="subheader">Gender</div>
+     <div itemprop="gender">Male</div>
     </div>
-    <div class="member">
-     <a href="sam.html">Sam</a> (Brother <i class="fa fa-paw"></i>)
+    <div class="content">
+     <div class="subheader">Birthday</div>
+     <div>February 29</div>
+    </div>
+   </div><!--
+--><div class="card z1">
+    <div class="title">Work</div>
+    <div class="content">
+     <div class="subheader">Occupation</div>
+     <div class="text">Cat</div>
+    </div>
+    <div class="content">
+     <div class="subheader">Employment</div>
+     <div class="text">Spandrusyszyn Household</div>
+    </div>
+   </div><!--
+--><div class="card z1">
+    <div class="title">Family</div>
+    <div class="content">
+     <div class="subheader"><a href="joe.html">Joe Spandrusyszyn</a></div>
+     <div class="caption">"Father"</div>
+    </div>
+    <div class="content">
+     <div class="subheader"><a href="crystal.html">Crystal Spandrusyszyn</a></div>
+     <div class="caption">"Mother"</div>
+    </div>
+    <div class="content">
+     <div class="subheader"><a href="sam.html">Sam Spandrusyszyn</a></div>
+     <div class="caption">Brother <i class="fa fa-paw"></i></div>
+    </div>
+   </div><!--
+--><div class="card z1">
+    <div class="title">Contact Information</div>
+    <div class="content">
+     <div class="subheader">Email</div>
+     <div class="text"><a href="mailto:dean@spandrusyszyn.com"><i class="fa fa-envelope"></i> dean@spandrusyszyn.com</a></div>
     </div>
    </div>
    
-   <h2>Contact Information</h2>
-   <div class="details linkCloud email">
-    <a href="mailto:dean@spandrusyszyn.com"><i class="fa fa-envelope"></i> dean@spandrusyszyn.com</a>
-   </div>
-  </section>
+  </div>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -60,5 +87,7 @@
   ga('create', 'UA-52492365-1', 'auto');
   ga('send', 'pageview');
   </script>
+  <script src="script.js"></script>
+  <script src="//cdn.jsdelivr.net/picturefill/2.3.0-beta/picturefill.min.js"></script>
  </body>
 </html>

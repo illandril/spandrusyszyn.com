@@ -1,138 +1,328 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Regular'),local('Roboto-Regular'),url(./fonts/Roboto-Regular.woff2) format('woff2'),url(./fonts/Roboto-Regular.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'),local('Roboto-Bold'),url(./fonts/Roboto-Bold.woff2) format('woff2'),url(./fonts/Roboto-Bold.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'),local('Roboto-Italic'),url(./fonts/Roboto-Italic.woff2) format('woff2'),url(./fonts/Roboto-Italic.woff) format('woff')
+}
+
 html,
 body {
     background-color: #FFF;
-    color: #000;
+    color: rgba(0,0,0,0.87);
     margin: 0;
     padding: 0;
-    text-align: center;
-    font-family: "Times New Roman",serif;
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0.25em 0.5em;
-    padding: 0;
+body {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    padding-top: 72px;
+    
+}
+body.dualheader {
+    padding-top: 120px;
 }
 
-h2 {
-    font-size: 1.1em;
-    margin: 1.5em 0.5em 0 0.5em;
-    padding: 0;
+body,
+.grid > * {
+    line-height: 1.42857143;
 }
 
 a {
     text-decoration: none;
-    color: #00C;
+    color: #304FFE;
 }
-
-img {
-    max-width: 100%;
-}
-
 a:hover {
     text-decoration: underline;
 }
 
-.familyTree {
-    display: inline-block;
-    width: 650px;
-    max-width: 100%;
-    text-align: center;
+header a:hover {
+    text-decoration: none;
+}
+header a {
+    color: inherit;
 }
 
-.familyTree .member {
-    margin: 2em 0;
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #212121;
+    color: #fff;
+    z-index: 5;
+    font-size: 24px;
+    line-height: 64px;
+    transition: top 0.75s ease-in-out;
+}
+body.dualheader.scrolled header {
+    top: -64px;
+}
+
+header .content:first-child {
+    background-image: url(couple.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+
+header .content {
+    padding-left: 64px;
+}
+
+header .subheader {
+    font-size: 20px;
+    line-height: 48px;
+}
+
+.navback {
+    transform: rotate(180deg);
+    transition: all 0.75s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    width: 24px;
+    background-image: url(back-w.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    pointer-events: none;
+}
+
+.scrolled .navback {
+    transform: rotate(0deg);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.content {
+    position: relative;
+    max-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: block;
+}
+
+.content.wide {
+    max-width: 1024px;
+    padding: 8px;
+}
+
+.cards .column {
+    width: 50%;
     display: inline-block;
-    width: 300px;
-    max-width: 100%;
-    text-align: center;
     vertical-align: top;
 }
-
-.familyTree .member a {
-    width: 100%;
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
+.cover {
+    padding: 0 8px;
 }
-
-.familyTree .member a:hover {
-    color: #00C;
+.cover img {
+    height: 224px;
 }
-
-.familyTree .member .photo {
-    max-width: 90%;
-}
-
-.familyTree .member .details {
-    border-width: 1px 0 2px 0;
-    border-style: solid;
-    border-color: black;
+.cover picture {
     display: block;
-    margin: 0.5em 1em;
+    overflow: hidden;
+    border-radius: 2px;
+}
+@media (min-width:1024px) {
+    .cover {
+        max-width: 1024px;
+    }
+    .content {
+        max-width: 1024px;
+    }
 }
 
-.familyTree .member:hover .details {
-    border-color: #00C;
+@media (min-height:300px) and (max-height:639px) {
+    body {
+        padding-top: 64px;
+    }
+    body.dualheader {
+        padding-top: 112px;
+    }
+    header {
+        line-height: 56px;
+    }
+    body.dualheader.scrolled header {
+        top: -56px;
+    }
+}
+@media (max-height:299px){
+    body {
+        padding-top: 56px;
+    }
+    body.dualheader {
+        padding-top: 104px;
+    }
+    header {
+        line-height: 48px;
+    }
+    body.dualheader.scrolled header {
+        top: -48px;
+    }
 }
 
-.familyTree .member .name {
-    font-size: 1.25em;
+
+.z1, .z2, .z3 {
+    position: relative;
+}
+.z2:after,.z3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none
+}
+
+.z1 {
+    position: relative;
+    z-index: 10;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+}
+
+.z2 {
+    z-index: 20;
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+.z2:after {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+}
+
+.z3 {
+    z-index: 30;
+    -webkit-box-shadow: 0 13px 25px 0 rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 13px 25px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,0.3);
+}
+
+.z3:after {
+    -webkit-box-shadow: 0 11px 7px 0 rgba(0,0,0,.19);
+    -moz-box-shadow: 0 11px 7px 0 rgba(0,0,0,.19);
+    box-shadow: 0 11px 7px 0 rgba(0,0,0,.19);
+}
+
+picture,
+.grid {
+    line-height: 0;
+}
+.tile {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 248px;
+    height: 248px;
+    position: relative;
+    margin: 4px;
+}
+
+.card {
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px;
+}
+
+.card .title {
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+}
+
+.card .content {
+    padding: 8px 16px;
+}
+
+.card .title + .content
+.card .content + .content {
+    padding-top: 0;
+}
+
+.card .subheader {
     font-weight: bold;
-    display: block;
 }
 
-.familyTree .member .subtitle {
-    display: block;
-    font-size: 1.1em;
-    font-style: italic;
+.card .text + .text,
+.card .caption + .text {
+    padding-top: 4px;
 }
 
-.nee {
-    display: block;
-    font-size: 0.8em;
-    font-style: italic;
+.card .caption {
+    color: rgba(0,0,0,0.54);
 }
 
-nav {
-    border-bottom: 1px dashed black;
-    margin-bottom: 0.5em;
-    padding: 0.25em;
-}
-
-.detailPage {
-    display: inline-block;
-    width: 650px;
-    max-width: 100%;
-}
-
-.detailPage .details {
-    border-style: dotted;
-    border-width: 2px 0;
-    border-color: black;
-    padding: 0.5em;
-}
-
-.detailPage .details div + div {
-    margin-top: 0.5em;
-}
-
-.detailPage .details.linkCloud {
+ul, ol, li, dl, dd, dt {
+    margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-.detailPage .linkCloud a {
-    display: inline-block;
-    margin: 0.5em 0.7em;
+dt {
+    font-weight: bold;
 }
 
-.block {
-    display: inline-block;
+dd + dt {
+    margin-top: 12px;
+}
+
+
+a.tile:hover {
+    opacity: 0.9;
+}
+
+.tile .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.tile .primary {
+    font-size: 16px;
+    line-height: 20px;
+}
+.tile .secondary {
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .origin {
     display: none;
-    opacity: 0.5;
+    opacity: 0.7;
     text-decoration: line-through;
 }
 
@@ -156,16 +346,20 @@ nav {
     visibility: visible;
 }
 
-.fa .alt {
-    display: none;
+/* states */
+#states {
+    line-height: 0;
 }
 
+@media (min-width:512px) {
+    #states {
+        min-height: 310px;
+    }
+}
 
-/* states */
 .visitedStates {
     display: inline-block;
     width: 100%;
-    max-width: 602px;
 }
 .visitedStatesDisplay {
     position: relative;
@@ -179,7 +373,6 @@ nav {
     top: 0px;
     right: 0px;
     bottom: 0px;
-    width: 100%;
     font-size: 12px;
 }
 .visitedStatesDisplay svg:first-child {
