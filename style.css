@@ -387,3 +387,12 @@ a.tile:hover {
     width: 18%;
     padding: 0 8px;
 }
+
+.pronunication {
+    text-align: center;
+    margin-top: 2em
+}
+
+.pronunciation > * {
+    vertical-align: middle;
+}
