@@ -1,0 +1,35 @@
+@import '../../_variables.scss';
+
+.combinedMap {
+    position: relative;
+    margin-inline: auto;
+    max-width: 800px;
+    & > svg:not(:first-child) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+
+    & > .legend {
+        & > div {
+            display: inline-block;
+            padding: 1rem;
+            vertical-align: middle;
+        }
+        & .dot {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.1rem;
+            border-radius: 1rem;
+            vertical-align: middle;
+        }
+        & .joe .dot {
+            background-color: $color-joe;
+        }
+        & .crystal .dot {
+            background-color: $color-crystal;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import '_reset.scss';
+@import '../_variables.scss';
+
+%container {
+    width: 100%;
+    margin-inline: auto;
+    padding: 1rem;
+
+    @media (min-width: 576px) {
+        width: 95%;
+        max-width: 1320px;
+    }
+}
+
+header {
+    background-color: $color-primary;
+    color: $contrast-primary;
+    box-shadow: $shadow;
+    & > nav {
+        @extend %container;
+        font-size: 1.5rem;
+        vertical-align: middle;
+        & > a {
+            margin-left: 1rem;
+            color: inherit;
+            & > del {
+                display: none;
+                opacity: 0.75;
+            }
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                & > del {
+                    display: inline;
+                }
+            }
+    }
+    }
+}
+
+main {
+    @extend %container;
+    text-align: center;
+}

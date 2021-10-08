@@ -1,0 +1,77 @@
+@import '../_variables.scss';
+
+.stateMap {
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    stroke-miterlimit: 1;
+    fill: none;
+    font-weight: bold;
+    text-anchor: middle;
+    font-size: 11px;
+    box-shadow: 0 0 2px #666;
+    margin-block: 10px;
+    max-width: 100%;
+}
+
+.stateMap .dividers {
+    stroke: #666;
+}
+
+.stateMap .timezones {
+    opacity: 0.95;
+}
+
+.stateMap .timezones path {
+    stroke: #fc0;
+}
+
+.stateMap .timezones .label {
+    fill: $color-fg;
+}
+
+.stateMap .key .label {
+    fill: $color-fg;
+}
+
+.stateMap.primary .p0,
+.stateMap.secondary .p0,
+.stateMap.tertiary .p0,
+.stateMap.singular .p,
+.stateMap.secondary .p,
+.stateMap.tertiary .p,
+.stateMap.singular .s,
+.stateMap.primary .s,
+.stateMap.tertiary .s,
+.stateMap.singular .t,
+.stateMap.primary .t,
+.stateMap.secondary .t {
+    visibility: hidden;
+}
+
+.stateMap .bg {
+    fill: $color-bg;
+}
+.stateMap .state {
+    fill: $color-bg;
+    stroke: $color-fg;
+}
+
+.stateMap.joe .passedThru {
+    fill: rgba($color-joe, 0.3);
+}
+.stateMap.joe .visited {
+    fill: rgba($color-joe, 0.6);
+}
+.stateMap.joe .lived {
+    fill: rgba($color-joe, 1);
+}
+
+.stateMap.crystal .passedThru {
+    fill: rgba($color-crystal, 0.3);
+}
+.stateMap.crystal .visited {
+    fill: rgba($color-crystal, 0.6);
+}
+.stateMap.crystal .lived {
+    fill: rgba($color-crystal, 1);
+}

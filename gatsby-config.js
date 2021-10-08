@@ -1,0 +1,43 @@
+module.exports = {
+    siteMetadata: {
+        siteUrl: 'https://www.spandrusyszyn.com',
+        title: 'Spandrusyszyn Family',
+    },
+    plugins: [
+        'gatsby-plugin-sass',
+        'gatsby-plugin-sitemap',
+        'gatsby-plugin-provide-react',
+        {
+            resolve: 'gatsby-plugin-preconnect',
+            options: {
+                domains: [{ domain: 'https://fonts.gstatic.com', crossOrigin: true }],
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-react-svg',
+            options: {
+                rule: {
+                    include: /node_modules\/@fortawesome\/fontawesome-free\/svgs\//,
+                },
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-google-fonts',
+            options: {
+                fonts: ['roboto'],
+                display: 'swap',
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-no-javascript-utils',
+            options: {
+                noScript: false,
+                noSourcemaps: true,
+                removeGeneratorTag: true,
+                removeReactHelmetAttrs: true,
+                noInlineStyles: true,
+                removeGatsbyAnnouncer: false,
+            },
+        },
+    ],
+};
