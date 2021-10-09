@@ -35,16 +35,10 @@
 
 .stateMap.primary .p0,
 .stateMap.secondary .p0,
-.stateMap.tertiary .p0,
 .stateMap.singular .p,
 .stateMap.secondary .p,
-.stateMap.tertiary .p,
 .stateMap.singular .s,
-.stateMap.primary .s,
-.stateMap.tertiary .s,
-.stateMap.singular .t,
-.stateMap.primary .t,
-.stateMap.secondary .t {
+.stateMap.primary .s {
     visibility: hidden;
 }
 

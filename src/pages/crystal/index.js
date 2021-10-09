@@ -7,13 +7,15 @@ import Map from '../../components/Map.js';
 import Page from '../../components/Page.js';
 import locations from '../../data/crystal/locations.js';
 
-import hero from './hero.webp';
-
 const CrystalPage = () => {
     return (
-        <Page title="Crystal Spandrusyszyn">
+        <Page
+            title="Crystal Spandrusyszyn"
+            description="Some details you might want to know about Crystal Spandrusyszyn"
+        >
             <Hero
-                src={hero}
+                src="/crystal/hero.webp"
+                alt="Photo of Crystal Spandrusyszyn"
                 title={
                     <>
                         Crystal
@@ -31,7 +33,12 @@ const CrystalPage = () => {
                     </Card>
                     <Card title="Contact Information">
                         <CardEntry title="Email">
-                            <a href="mailto:crystal@spandrusyszyn.com" target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="mailto:crystal@spandrusyszyn.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="blockLink"
+                            >
                                 <Icon name="email" /> crystal@spandrusyszyn.com
                             </a>
                         </CardEntry>

@@ -7,7 +7,10 @@ import './index.scss';
 
 const TravelPage = () => {
     return (
-        <Page title="Joe and Crystal's Travels">
+        <Page
+            title="Joe and Crystal's Travels"
+            description="A map showing the states Joe and Crystal Spandrusyszyn have spent time in"
+        >
             <div className="combinedMap">
                 <Map color="joe" type="primary" locations={joeLocations} />
                 <Map color="crystal" type="secondary" locations={crystalLocations} />

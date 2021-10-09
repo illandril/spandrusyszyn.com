@@ -5,13 +5,12 @@ import Hero from '../../components/Hero.js';
 import Icon from '../../components/Icon.js';
 import Page from '../../components/Page.js';
 
-import hero from './hero.webp';
-
 const DeanPage = () => {
     return (
-        <Page title="Dean Spandrusyszyn">
+        <Page title="Dean Spandrusyszyn" description="Some details you might want to know about Dean Spandrusyszyn">
             <Hero
-                src={hero}
+                src="/dean/hero.webp"
+                alt="Photo of Dean Spandrusyszyn"
                 title={
                     <>
                         Dean

@@ -41,5 +41,10 @@
     "npm-check-updates": "^11.8.5",
     "prettier": "^2.4.1"
   },
-  "browserslist": [">0.5% in US", "Firefox ESR", "not dead", "not IE 11"]
+  "browserslist": [
+    ">0.5% in US",
+    "Firefox ESR",
+    "not dead",
+    "not IE 11"
+  ]
 }

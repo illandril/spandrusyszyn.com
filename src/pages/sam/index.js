@@ -5,13 +5,12 @@ import Hero from '../../components/Hero.js';
 import Icon from '../../components/Icon.js';
 import Page from '../../components/Page.js';
 
-import hero from './hero.webp';
-
 const SamPage = () => {
     return (
-        <Page title="Sam Spandrusyszyn">
+        <Page title="Sam Spandrusyszyn" description="Some details you might want to know about Sam Spandrusyszyn">
             <Hero
-                src={hero}
+                src="/sam/hero.webp"
+                alt="Photo of Sam Spandrusyszyn"
                 title={
                     <>
                         Sam

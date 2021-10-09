@@ -5,7 +5,7 @@ import './Hero.scss';
 const Hero = ({ src, alt, title }) => {
     return (
         <div className="hero">
-            <img src={src} alt={alt} />
+            <img src={src} alt={alt} width={1288} height={224} />
             <h1>{title}</h1>
         </div>
     );

@@ -7,6 +7,7 @@ module.exports = {
         'gatsby-plugin-sass',
         'gatsby-plugin-sitemap',
         'gatsby-plugin-provide-react',
+        'gatsby-plugin-react-helmet',
         {
             resolve: 'gatsby-plugin-preconnect',
             options: {
@@ -31,13 +32,14 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-no-javascript-utils',
             options: {
-                noScript: false,
+                noScript: true,
                 noSourcemaps: true,
                 removeGeneratorTag: true,
                 removeReactHelmetAttrs: true,
                 noInlineStyles: true,
-                removeGatsbyAnnouncer: false,
+                removeGatsbyAnnouncer: true,
             },
         },
     ],
+    polyfill: false,
 };

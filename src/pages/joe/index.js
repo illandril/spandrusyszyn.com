@@ -7,13 +7,12 @@ import Map from '../../components/Map.js';
 import Page from '../../components/Page.js';
 import locations from '../../data/joe/locations.js';
 
-import hero from './hero.webp';
-
 const JoePage = () => {
     return (
-        <Page title="Joe Spandrusyszyn">
+        <Page title="Joe Spandrusyszyn" description="Some details you might want to know about Joe Spandrusyszyn">
             <Hero
-                src={hero}
+                src="/joe/hero.webp"
+                alt="Photo of Joe Spandrusyszyn"
                 title={
                     <>
                         Joe
@@ -31,28 +30,46 @@ const JoePage = () => {
                     </Card>
                     <Card title="Contact Information">
                         <CardEntry title="Email">
-                            <a href="mailto:joe@spandrusyszyn.com" target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="mailto:joe@spandrusyszyn.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="blockLink"
+                            >
                                 <Icon name="email" /> joe@spandrusyszyn.com
                             </a>
                         </CardEntry>
                         <CardEntry title="Web Presence">
-                            <a href="https://www.facebook.com/illandril" target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="https://www.facebook.com/illandril"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="blockLink"
+                            >
                                 <Icon name="facebook" /> Facebook
                             </a>
-                            <br />
                             <a
                                 href="https://www.linkedin.com/in/joespandrusyszyn"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="blockLink"
                             >
                                 <Icon name="linkedin" /> LinkedIn
                             </a>
-                            <br />
-                            <a href="https://twitter.com/illandril" target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="https://twitter.com/illandril"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="blockLink"
+                            >
                                 <Icon name="twitter" /> Twitter
                             </a>
-                            <br />
-                            <a href="https://github.com/illandril" target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="https://github.com/illandril"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="blockLink"
+                            >
                                 <Icon name="github" /> GitHub
                             </a>
                         </CardEntry>
