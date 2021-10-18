@@ -72,6 +72,14 @@ const JoePage = () => {
                             >
                                 <Icon name="github" /> GitHub
                             </a>
+                            <a
+                                href="https://joe.spandrusyszyn.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="blockLink"
+                            >
+                                <Icon name="portfolio" /> Portfolio
+                            </a>
                         </CardEntry>
                     </Card>
                     <Card title="Work">
